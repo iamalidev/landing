@@ -1,0 +1,10 @@
+.info {
+  padding-block: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .info__content {
+    max-width: 445px;
+  }
+}

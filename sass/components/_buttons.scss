@@ -2,9 +2,10 @@
   font-size: 16px;
   font-weight: 500;
   color: $white;
-  padding: 10px 35px;
+  padding: 6px 40px;
   border-radius: 3px;
   border: none;
+  cursor: pointer;
   background-color: $dark-blue;
   transition: 0.3s;
 
@@ -17,14 +18,9 @@
   font-size: 16px;
   font-weight: 500;
   color: $dark-blue;
-  padding: 10px 35px;
+  padding: 5px 40px;
   border-radius: 3px;
   border: 2px solid $dark-blue;
+  cursor: pointer;
   background-color: transparent;
-  transition: 0.3s;
-
-  &:hover {
-    color: $white;
-    background-color: $dark-blue;
-  }
 }
