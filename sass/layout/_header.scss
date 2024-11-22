@@ -1,8 +1,18 @@
 .header {
   padding-top: 12px;
-  background-image: url("/landing/assets/images/hero-img.png");
+  background-image: url("/assets/images/hero-img.png");
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: cover cover;
+  background-size: contain;
   height: 110vh;
+  @include media(992) {
+    background-position: calc(100% - -300px) center;
+    background-size: cover;
+  }
+  @include media(768) {
+    background-position: calc(100% - -500px) center;
+  }
+  @include media(576) {
+    background-position: calc(100% - -600px) center;
+  }
 }

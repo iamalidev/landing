@@ -3,6 +3,9 @@
   font-weight: 500;
   line-height: 48px;
   color: $deep-navy;
+  @include media(576) {
+    font-size: 24px;
+  }
 }
 
 .main-text {
@@ -10,4 +13,8 @@
   line-height: 26px;
   color: $pastel-blue;
   margin-block: 16px 40px;
+  @include media(576) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }

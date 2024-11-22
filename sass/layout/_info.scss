@@ -3,8 +3,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include media(992) {
+    flex-direction: column;
+    gap: 50px;
+    padding-block: 50px;
+    text-align: center;
+  }
 
   .info__content {
     max-width: 445px;
+  }
+
+  .info__img {
+    @include media(576) {
+      width: 300px;
+    }
   }
 }

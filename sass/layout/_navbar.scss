@@ -6,10 +6,20 @@
   .navbar__items {
     display: flex;
     gap: 60px;
+    @include media(768) {
+      display: none;
+    }
 
     .navbar__link {
       font-size: 15px;
       color: $rich-blue;
+    }
+  }
+
+  .sidenav-toggle {
+    display: none;
+    @include media(768) {
+      display: block;
     }
   }
 }

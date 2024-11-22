@@ -17,6 +17,11 @@
     <header class="header">
       <div class="container">
         <nav class="header__navbar">
+          <img
+            class="sidenav-toggle"
+            src="assets/icons/sidenav-toggle.svg"
+            alt="Sidenav toggle"
+          />
           <div class="navbar__items">
             <a href="#" class="navbar__link">Home</a>
             <a href="#" class="navbar__link">About</a>
@@ -39,8 +44,8 @@
             Nulla consequat massa quis enim.
           </p>
           <div class="hero__buttons">
-            <button class="button">Purchase UI Kit</button>
-            <button class="outline-button">Learn More</button>
+            <a href="#" class="button">Purchase UI Kit</a>
+            <a href="#" class="outline-button">Learn More</a>
           </div>
         </section>
       </div>
@@ -79,11 +84,11 @@
               </div>
             </div>
           </div>
-          <img src="assets/images/first-section.png" alt="Intro" />
+          <img class="intro__img" src="assets/images/first-section.png" alt="Intro" />
         </section>
 
         <section class="info">
-          <img src="assets/images/second-section.png" alt="Info" />
+          <img class="info__img" src="assets/images/second-section.png" alt="Info" />
           <div class="info__content">
             <h3 class="main-title">Light, Fast & Powerful</h3>
             <p class="main-text">
@@ -97,7 +102,7 @@
         </section>
 
         <section class="info">
-          <img src="assets/images/third-section.png" alt="Info" />
+          <img class="info__img" src="assets/images/third-section.png" alt="Info" />
           <div class="info__content">
             <h3 class="main-title">Light, Fast & Powerful</h3>
             <p class="main-text">
@@ -111,7 +116,7 @@
         </section>
 
         <section class="info">
-          <img src="assets/images/fourth-section.png" alt="Info" />
+          <img class="info__img" src="assets/images/fourth-section.png" alt="Info" />
           <div class="info__content">
             <h3 class="main-title">Light, Fast & Powerful</h3>
             <p class="main-text">
@@ -121,15 +126,61 @@
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem. Nulla consequat massa quis enim.
             </p>
-            <button class="button">Purchase Now</button>
+            <a href="#" class="button">Purchase Now</a>
           </div>
         </section>
       </div>
+
+      <section class="pricing">
+        <div class="pricing__content">
+          <h2 class="main-title">A Price To Suit Everyone</h2>
+          <p class="main-text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus
+          </p>
+          <h2 class="price">$40</h2>
+          <p class="price__text">UI Design Kit</p>
+          <div class="purchase">
+            <p class="purchase__text">See, One price. Simple.</p>
+            <a href="#" class="button">Purchase Now</a>
+          </div>
+        </div>
+      </section>
     </main>
     <!--end::Main-->
 
     <!--begin::Footer-->
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__heading">
+          <div class="footer__copyright">
+            ©<span id="year"></span> Yourcompany
+          </div>
+          <img src="assets/logo.svg" alt="Logo" />
+          <a href="#" class="button">Purchase now</a>
+        </div>
+        <div class="line"></div>
+        <nav class="footer__navbar">
+          <div class="navbar__items">
+            <a href="#" class="navbar__link">Home</a>
+            <a href="#" class="navbar__link">About</a>
+            <a href="#" class="navbar__link">Contact</a>
+          </div>
+          <div class="social__links">
+            <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="assets/icons/linkedin.svg" alt="Linkedin" /></a>
+            <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="assets/icons/youtube.svg" alt="Youtube" /></a>
+            <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+          </div>
+        </nav>
+      </div>
+    </footer>
     <!--end::Footer-->
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>

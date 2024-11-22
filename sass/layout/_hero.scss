@@ -1,11 +1,17 @@
 .hero {
   margin-top: 200px;
   max-width: 539px;
+  @include media(576) {
+    margin-top: 100px;
+  }
 
   .hero__title {
     font-size: 50px;
     font-weight: 500;
     color: $deep-navy;
+    @include media(576) {
+      font-size: 32px;
+    }
   }
 
   .hero__text {
@@ -13,6 +19,10 @@
     line-height: 30px;
     color: $rich-blue;
     margin-block: 20px 70px;
+    @include media(576) {
+      font-size: 12px;
+      line-height: 20px;
+    }
   }
 
   .hero__buttons {

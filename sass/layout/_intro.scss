@@ -4,11 +4,26 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  @include media(992) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 50px;
+    padding-block: 50px;
+  }
 
   .intro__info {
     margin-top: 80px;
     display: flex;
     gap: 30px;
+    @include media(1200) {
+      display: flex;
+      flex-direction: column;
+    }
+    @include media(992) {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+    }
   }
 
   .info__wrapper {
@@ -25,5 +40,11 @@
   .info__text {
     font-size: 12px;
     color: $dark-gray;
+  }
+
+  .intro__img {
+    @include media(576) {
+      width: 300px;
+    }
   }
 }
